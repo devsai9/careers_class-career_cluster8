@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Question 5</title>
+    <meta charset="UTF-8" />
+    
+    <script>
+      var submit_button = document.getElementById('submit-button');
+      var ans1 = document.getElementById('ans1');
+      var ans2 = document.getElementById('ans2');
+      var ans3 = document.getElementById('ans3');
+      
+      function submit() {
+        // The Correct Answer is... #1 AKA ans1
+        var isCorrect = false;
+        
+        if (document.getElementById('ans3').checked) {
+          isCorrect = true;
+        } else {
+          isCorrect = false;
+        }
+        
+        if (isCorrect == true) {
+          alert("That is correct!");
+          window.location.assign('https://saisiddhish.github.io/careers8-career_cluster8/questions/six.html');
+        } else {
+          alert("That is incorrect, the correct choice was 'To decrease 10%'");
+          window.location.assign('https://saisiddhish.github.io/careers8-career_cluster8/questions/six.html');
+        }
+      }
+    </script>
+
+    <style>
+      label {
+        width: 365px;
+        display: inline-block;
+        text-align: left;
+        font-size: 20px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://saisiddhish.github.io/careers8-career_cluster8/assets/css/styles.css" crossorigin="anonymous"> 
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1 id="question-title">Question Five:&nbsp;</h1><h1 id="question">How much is the demand for Computer Programmers going to increase/decrease from 2020 to 2030?</h1>
+      </div> <!-- title -->
+      <br>
+      <div class="content">
+        <form>
+          <div class="form-options">
+            <input type="radio" id="ans1" name="ans" value="To increase 10%" />
+            <label for="To increase 10%">To increase 10%</label><br>
+            <input type="radio" id="ans2" name="ans" value="To stay the same or show little to no change" />
+            <label for="To stay the same or show little to no change">To stay the same or show little to no change</label><br>
+            <input type="radio" id="ans3" name="ans" value="To decrease 10%" />
+            <label for="To decrease 10%">To decrease 10%</label><br>
+          </div>
+        </form>
+        <br>
+        <div class="submit">
+          <button id="submit-button" onclick="submit()">Submit</button>
+        </div> <!-- submit -->
+        <br>
+        <div class="related-img">
+          <img src="https://fthmb.tqn.com/UZS2curMfBJpwbb8LrvpxttXhA0=/2103x1428/filters:fill(auto,1)/Stock-Market-Charts-Are-Useless-56a093595f9b58eba4b1ae5b.jpg" id="related-img" alt="Stock Market Chart" />
+          <p>Source:&nbsp;<a href="https://fthmb.tqn.com/UZS2curMfBJpwbb8LrvpxttXhA0=/2103x1428/filters:fill(auto,1)/Stock-Market-Charts-Are-Useless-56a093595f9b58eba4b1ae5b.jpg" id="related-img-src">src</a></p>
+        </div> <!-- related-img -->
+      </div> <!-- content -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

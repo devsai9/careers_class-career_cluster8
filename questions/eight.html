@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Question 8</title>
+    <meta charset="UTF-8" />
+    
+    <script>
+      var submit_button = document.getElementById('submit-button');
+      var ans1 = document.getElementById('ans1');
+      var ans2 = document.getElementById('ans2');
+      var ans3 = document.getElementById('ans3');
+      
+      function submit() {
+        // The Correct Answer is... #1 AKA ans1
+        var isCorrect = false;
+        
+        if (document.getElementById('ans1').checked) {
+          isCorrect = true;
+        } else {
+          isCorrect = false;
+        }
+        
+        if (isCorrect == true) {
+          alert("That is correct!");
+          window.location.assign('https://saisiddhish.github.io/careers8-career_cluster8/questions/nine.html');
+        } else {
+          alert("That is incorrect, the correct choice was 'Experience in an IT department, often as a Network and Computer Systems Administrator'");
+          window.location.assign('https://saisiddhish.github.io/careers8-career_cluster8/questions/nine.html');
+        }
+      }
+    </script>
+
+    <style>
+      label {
+        width: 732px;
+        display: inline-block;
+        text-align: left;
+        font-size: 20px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://saisiddhish.github.io/careers8-career_cluster8/assets/css/styles.css" crossorigin="anonymous"> 
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1 id="question-title">Question Eight:&nbsp;</h1><h1 id="question">What type of past experience may be required for becoming an Information Security Analyst?</h1>
+      </div> <!-- title -->
+      <br>
+      <div class="content">
+        <form>
+          <div class="form-options">
+            <input type="radio" id="ans1" name="ans" value="Experience in an IT department, often as a Network and Computer Systems Administrator" />
+            <label for="Experience in an IT department, often as a Network and Computer Systems Administrator">Experience in an IT department, often as a Network and Computer Systems Administrator</label><br>
+            <input type="radio" id="ans2" name="ans" value="Experience in a Bakery, often as a Baker" />
+            <label for="Experience in a Bakery, often as a Baker">Experience in a Bakery, often as a Baker</label><br>
+            <input type="radio" id="ans3" name="ans" value="Experience in a airplane, often as a Pilot or Co-Pilot" />
+            <label for="Experience in a airplane, often as a Pilot or Co-Pilot">Experience in a airplane, often as a Pilot or Co-Pilot</label><br>
+          </div>
+        </form>
+        <br>
+        <div class="submit">
+          <button id="submit-button" onclick="submit()">Submit</button>
+        </div> <!-- submit -->
+        <br>
+        <div class="related-img">
+          <img src="https://cdn.shopify.com/s/files/1/1091/5336/products/Timeline025Slide1.jpg" id="related-img" alt="A timeline of milestones" />
+          <p>Source:&nbsp;<a href="https://cdn.shopify.com/s/files/1/1091/5336/products/Timeline025Slide1.jpg" id="related-img-src">src</a></p>
+        </div> <!-- related-img -->
+      </div> <!-- content -->
+    </div> <!-- wrapper -->
+  </body>

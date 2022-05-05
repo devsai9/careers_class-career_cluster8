@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Question 2</title>
+    <meta charset="UTF-8" />
+    
+    <script>
+      var submit_button = document.getElementById('submit-button');
+      var ans1 = document.getElementById('ans1');
+      var ans2 = document.getElementById('ans2');
+      var ans3 = document.getElementById('ans3');
+      
+      function submit() {
+        // The Correct Answer is... #1 AKA ans1
+        var isCorrect = false;
+        
+        if (document.getElementById('ans3').checked) {
+          isCorrect = true;
+        } else {
+          isCorrect = false;
+        }
+        
+        if (isCorrect == true) {
+          alert("That is correct!");
+          window.location.assign('https://saisiddhish.github.io/careers8-career_cluster8/questions/three.html');
+        } else {
+          alert("That is incorrect, the correct choice was 'From a home (remote job) or office'");
+          window.location.assign('https://saisiddhish.github.io/careers8-career_cluster8/questions/three.html');
+        }
+      }
+    </script>
+
+    <style>
+      label {
+        width: 426px;
+        display: inline-block;
+        text-align: left;
+        font-size: 20px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://saisiddhish.github.io/careers8-career_cluster8/assets/css/styles.css" crossorigin="anonymous"> 
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1 id="question-title">Question Two:&nbsp;</h1><h1 id="question">Where do Computer Programmers work?</h1>
+      </div> <!-- title -->
+      <br>
+      <div class="content">
+        <form>
+          <div class="form-options">
+            <input type="radio" id="ans1" name="ans" value="From cake bakery :)" />
+            <label for="From cake bakery :)">From cake bakery :)</label><br>
+            <input type="radio" id="ans2" name="ans" value="While parachuting to the ground at terminal velocity" />
+            <label for="While parachuting to the ground at terminal velocity">While parachuting to the ground at terminal velocity</label><br>
+            <input type="radio" id="ans3" name="ans" value="From a home (remote job) or office" />
+            <label for="From a home (remote job) or office">From a home (remote job) or office</label><br>
+          </div>
+        </form>
+        <br>
+        <div class="submit">
+          <button id="submit-button" onclick="submit()">Submit</button>
+        </div> <!-- submit -->
+        <br>
+        <div class="related-img">
+          <img src="https://thumbs.dreamstime.com/b/parachute-611742.jpg" id="related-img" alt="A person parachuting to the ground" />
+          <p>Source:&nbsp;<a href="https://thumbs.dreamstime.com/b/parachute-611742.jpg" id="related-img-src">src</a></p>
+        </div> <!-- related-img -->
+      </div> <!-- content -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
