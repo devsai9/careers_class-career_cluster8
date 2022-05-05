@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+*{
+  margin:0; 
+  padding:0;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.wrapper {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+#question-title {
+  color: #f44336;
+}
+
+#question {
+  color: #4169e1;
+}
+
+#submit-button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 41px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#related-img {
+  width: 500px;
+}
+
+#related-img-src {
+  color: white;
+  text-decoration: none;
+}
+
+#related-img-src {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.form-options {
+  font-family: 'Hubballi', cursive;
+}
